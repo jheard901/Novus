@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_app.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\cefsimple_win.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler_win.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\simple_app.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\resource.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GitHub\Terros\cef-project\cefsimple\res\cefsimple.ico">
+      <Filter>cefsimple\res</Filter>
+    </None>
+    <None Include="E:\GitHub\Terros\cef-project\cefsimple\res\small.ico">
+      <Filter>cefsimple\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\GitHub\Terros\cef-project\cefsimple\cefsimple.rc">
+      <Filter>cefsimple</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cefsimple">
+      <UniqueIdentifier>{4837D13D-299F-3335-B999-171A96868D7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cefsimple\res">
+      <UniqueIdentifier>{E1A1C61B-1677-31EF-AF55-D86E33786580}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

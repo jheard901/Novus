@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GitHub\Terros\cef-main\CMakeFiles\7b96f58430bef8f0a9abc13ec693bef5\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ED9D9151-0DA1-3BC4-92AB-6065AE5E0767}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

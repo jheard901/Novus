@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{698D589C-323B-3862-AE3D-6723A16915C5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cefsimple</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GitHub\Terros\cef-main\cefsimple\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cefsimple.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cefsimple</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GitHub\Terros\cef-main\cefsimple\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cefsimple.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cefsimple</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...														</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "E:/GitHub/Terros/cef-project/cefsimple/cefsimple.exe.manifest" "E:/GitHub/Terros/cef-project/cefsimple/compatibility.manifest" -outputresource:"E:/GitHub/Terros/cef-main/cefsimple/Debug/cefsimple.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/d3dcompiler_43.dll E:/GitHub/Terros/cef-main/cefsimple/Debug/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/d3dcompiler_47.dll E:/GitHub/Terros/cef-main/cefsimple/Debug/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/libcef.dll E:/GitHub/Terros/cef-main/cefsimple/Debug/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/libEGL.dll E:/GitHub/Terros/cef-main/cefsimple/Debug/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/libGLESv2.dll E:/GitHub/Terros/cef-main/cefsimple/Debug/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/natives_blob.bin E:/GitHub/Terros/cef-main/cefsimple/Debug/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Debug/snapshot_blob.bin E:/GitHub/Terros/cef-main/cefsimple/Debug/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef.pak E:/GitHub/Terros/cef-main/cefsimple/Debug/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_100_percent.pak E:/GitHub/Terros/cef-main/cefsimple/Debug/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_200_percent.pak E:/GitHub/Terros/cef-main/cefsimple/Debug/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_extensions.pak E:/GitHub/Terros/cef-main/cefsimple/Debug/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/devtools_resources.pak E:/GitHub/Terros/cef-main/cefsimple/Debug/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/icudtl.dat E:/GitHub/Terros/cef-main/cefsimple/Debug/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_directory E:/GitHub/Terros/cef-project/Resources/locales E:/GitHub/Terros/cef-main/cefsimple/Debug/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\GitHub\Terros\cef-project\Debug\libcef.lib;..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;E:\GitHub\Terros\cef-project\Debug\cef_sandbox.lib;dbghelp.lib;psapi.lib;version.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GitHub/Terros/cef-main/cefsimple/Debug/cefsimple.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GitHub/Terros/cef-main/cefsimple/Debug/cefsimple.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>E:\GitHub\Terros\cef-project\cefsimple\cefsimple.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;NDEBUG;_NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;PSAPI_VERSION=1;CEF_USE_SANDBOX;CEF_USE_ATL;NDEBUG;_NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\GitHub\Terros\cef-project;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...														</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "E:/GitHub/Terros/cef-project/cefsimple/cefsimple.exe.manifest" "E:/GitHub/Terros/cef-project/cefsimple/compatibility.manifest" -outputresource:"E:/GitHub/Terros/cef-main/cefsimple/Release/cefsimple.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/d3dcompiler_43.dll E:/GitHub/Terros/cef-main/cefsimple/Release/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/d3dcompiler_47.dll E:/GitHub/Terros/cef-main/cefsimple/Release/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/libcef.dll E:/GitHub/Terros/cef-main/cefsimple/Release/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/libEGL.dll E:/GitHub/Terros/cef-main/cefsimple/Release/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/libGLESv2.dll E:/GitHub/Terros/cef-main/cefsimple/Release/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/natives_blob.bin E:/GitHub/Terros/cef-main/cefsimple/Release/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Release/snapshot_blob.bin E:/GitHub/Terros/cef-main/cefsimple/Release/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef.pak E:/GitHub/Terros/cef-main/cefsimple/Release/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_100_percent.pak E:/GitHub/Terros/cef-main/cefsimple/Release/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_200_percent.pak E:/GitHub/Terros/cef-main/cefsimple/Release/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/cef_extensions.pak E:/GitHub/Terros/cef-main/cefsimple/Release/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/devtools_resources.pak E:/GitHub/Terros/cef-main/cefsimple/Release/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_if_different E:/GitHub/Terros/cef-project/Resources/icudtl.dat E:/GitHub/Terros/cef-main/cefsimple/Release/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -E copy_directory E:/GitHub/Terros/cef-project/Resources/locales E:/GitHub/Terros/cef-main/cefsimple/Release/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\GitHub\Terros\cef-project\Release\libcef.lib;..\libcef_dll_wrapper\Release\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;E:\GitHub\Terros\cef-project\Release\cef_sandbox.lib;dbghelp.lib;psapi.lib;version.lib;winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/GitHub/Terros/cef-main/cefsimple/Release/cefsimple.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/GitHub/Terros/cef-main/cefsimple/Release/cefsimple.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>E:\GitHub\Terros\cef-project\cefsimple\cefsimple.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/GitHub/Terros/cef-project/cefsimple/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -HE:/GitHub/Terros/cef-project -BE:/GitHub/Terros/cef-main --check-stamp-file E:\GitHub\Terros\cef-main\cefsimple\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/GitHub/Terros/cef-project/cefsimple/CMakeLists.txt;E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt;E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\GitHub\Terros\cef-main\cefsimple\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/GitHub/Terros/cef-project/cefsimple/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\GitHub\Terros\cmake-3.6.1-win32-x86\bin\cmake.exe -HE:/GitHub/Terros/cef-project -BE:/GitHub/Terros/cef-main --check-stamp-file E:\GitHub\Terros\cef-main\cefsimple\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/GitHub/Terros/cef-project/cefsimple/CMakeLists.txt;E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt;E:\GitHub\Terros\cef-project\cefsimple\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\GitHub\Terros\cef-main\cefsimple\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\simple_app.h" />
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler.h" />
+    <ClInclude Include="E:\GitHub\Terros\cef-project\cefsimple\resource.h" />
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_app.cc"  />
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler.cc"  />
+    <ResourceCompile Include="E:\GitHub\Terros\cef-project\cefsimple\cefsimple.rc"  />
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\cefsimple_win.cc"  />
+    <ClCompile Include="E:\GitHub\Terros\cef-project\cefsimple\simple_handler_win.cc"  />
+    <None Include="E:\GitHub\Terros\cef-project\cefsimple\res\cefsimple.ico" />
+    <None Include="E:\GitHub\Terros\cef-project\cefsimple\res\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/GitHub/Terros/cef-main/ZERO_CHECK.vcxproj">
+      <Project>1B9A5262-853E-32A1-987A-74552333D6DC</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/GitHub/Terros/cef-main/libcef_dll_wrapper/libcef_dll_wrapper.vcxproj">
+      <Project>9EF2DD05-AEF9-3219-BE84-5FE5D8D0A47E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

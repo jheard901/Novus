@@ -1,0 +1,22 @@
+Read the 'Help' of the CMake GUI tool. It is very helpful in understanding
+how to begin to use the tool.
+
+Ensure you keep software up to date according to the minimum requirements for
+using CEF:
+https://bitbucket.org/chromiumembedded/cef/wiki/BranchesAndBuilding
+
+Nuggets (of GOLD):
+This is probably why I can't compile libcef_dll_wrapper as a .dll and am forced
+to compile it as a static library for the moment:
+http://stackoverflow.com/questions/2848556/c-project-compiles-as-static-lib-fails-linker-error-as-dynamic-lib-why
+
+Ignoring specific directories or files in a project:
+http://stackoverflow.com/questions/343646/ignoring-directories-in-git-repos-on-windows
+
+Reverting and undo changes to git repo:
+http://stackoverflow.com/questions/5097456/throw-away-local-commits-in-git
+http://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1
+
+Ignoring specific files within a directory with .gitignore:
+http://stackoverflow.com/questions/5600621/gitignore-exclude-files-in-directory-but-not-certain-directories
+
