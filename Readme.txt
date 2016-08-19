@@ -52,7 +52,18 @@ with the webpage as normal. To go back to the Navigation state a bindable key fo
 used; the 'alt' key would probably work well for this since it conveniently located for ease of
 use - not sure what to do for alternatives because this binding has to persist in both the Control
 and Nav states (maybe make it right shift only?) - another option could be to use one of the 'F#' keys
-such as F12.
+such as F12. To differentiate between the current state the user is in, there should be a notable
+visual difference between Control/Navigation states. One solution is to make different color schemes
+for control and navigation: eg navigation mode could have a red color scheme around the borders of
+the browser or for its overall look, but when it goes to control mode the color scheme should
+interpolate to blue. Another recommendation is to make the address bar of a website only show while
+the user is in control mode, and to hide it while navigating through pages in navigation mode.
+
+*Develop a map mode (maybe make this a state?) that shows the overall picture in a grid-like
+presentation of all websites that are currently open in a collection, in addition to any hotkeyed
+traversal tabs. Users have the option of using mouse to select a tab to immediately jump to,
+or to use the mouse to close out tabs they no longer want open. Whatever tab the mouse is hovered
+over will become highlighted to indicate that tab is focused i.e. hotkeying will utilize that tab.
 
 [Notes]
 Keep in mind to make every action within the Navigation state bindable to any key - each binding must
