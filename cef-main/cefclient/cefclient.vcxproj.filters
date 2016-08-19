@@ -392,11 +392,11 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="cefclient">
-      <UniqueIdentifier>{42A96204-383E-3C02-B5E4-CCA04FF61EA2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cefclient\resources\win">
       <UniqueIdentifier>{03F4954B-68C5-3416-8FBB-BAFBE494DF01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cefclient">
+      <UniqueIdentifier>{42A96204-383E-3C02-B5E4-CCA04FF61EA2}</UniqueIdentifier>
     </Filter>
     <Filter Include="cefclient\browser">
       <UniqueIdentifier>{FDBAF8D4-26C2-3D76-AA15-5C1951CBF8FB}</UniqueIdentifier>

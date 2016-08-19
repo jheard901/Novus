@@ -42,11 +42,11 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="cefsimple">
-      <UniqueIdentifier>{4837D13D-299F-3335-B999-171A96868D7D}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cefsimple\res">
       <UniqueIdentifier>{E1A1C61B-1677-31EF-AF55-D86E33786580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cefsimple">
+      <UniqueIdentifier>{4837D13D-299F-3335-B999-171A96868D7D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

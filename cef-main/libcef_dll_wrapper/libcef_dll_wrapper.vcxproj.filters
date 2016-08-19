@@ -1457,36 +1457,6 @@
     <CustomBuild Include="E:\GitHub\Terros\cef-project\libcef_dll\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="libcef_dll\cpptoc\views">
-      <UniqueIdentifier>{3298D37E-FEBA-37A2-851A-4AE67F2E38DA}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\capi\views">
-      <UniqueIdentifier>{24AB7CA1-74F9-3D38-B372-21EC5D682E97}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\base\internal">
-      <UniqueIdentifier>{05A9FA41-CB77-3D79-8EF2-F993A4401D96}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll\ctocpp\views">
-      <UniqueIdentifier>{FE235000-8D83-3770-9CAF-6211A69713F7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll\base">
-      <UniqueIdentifier>{B3BAE218-1207-37FE-B163-8A2E25B5EEFE}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll\cpptoc">
-      <UniqueIdentifier>{270A55D5-EB55-3CDE-93F7-883D0C246D40}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll\ctocpp">
-      <UniqueIdentifier>{F9EB0888-BD2D-3F2D-969D-1869837E1447}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll\wrapper">
-      <UniqueIdentifier>{E4E45D34-C14D-38FD-BB75-5738486A3553}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libcef_dll">
-      <UniqueIdentifier>{FB3FE0FB-517B-3D31-B220-7FF8AD3D67C3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include">
-      <UniqueIdentifier>{48ACE864-133E-3881-933E-68F171574ADB}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\base">
       <UniqueIdentifier>{2AE8860D-7039-3AEB-9DC3-B15C9506A75B}</UniqueIdentifier>
     </Filter>
@@ -1501,6 +1471,36 @@
     </Filter>
     <Filter Include="include\wrapper">
       <UniqueIdentifier>{08F13DFB-AE07-3740-B3F6-F08F8E45712F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\cpptoc\views">
+      <UniqueIdentifier>{3298D37E-FEBA-37A2-851A-4AE67F2E38DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll">
+      <UniqueIdentifier>{FB3FE0FB-517B-3D31-B220-7FF8AD3D67C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{48ACE864-133E-3881-933E-68F171574ADB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\capi\views">
+      <UniqueIdentifier>{24AB7CA1-74F9-3D38-B372-21EC5D682E97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\ctocpp\views">
+      <UniqueIdentifier>{FE235000-8D83-3770-9CAF-6211A69713F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\internal">
+      <UniqueIdentifier>{05A9FA41-CB77-3D79-8EF2-F993A4401D96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\base">
+      <UniqueIdentifier>{B3BAE218-1207-37FE-B163-8A2E25B5EEFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\cpptoc">
+      <UniqueIdentifier>{270A55D5-EB55-3CDE-93F7-883D0C246D40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\ctocpp">
+      <UniqueIdentifier>{F9EB0888-BD2D-3F2D-969D-1869837E1447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libcef_dll\wrapper">
+      <UniqueIdentifier>{E4E45D34-C14D-38FD-BB75-5738486A3553}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
