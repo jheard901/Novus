@@ -19,7 +19,7 @@ below:
 	   V
 {tab 1} {tab 2} {tab 3}	
 {tab 4} {tab 5} {tab 6}	
-{tab 7} {@tab 8} {tab 9}	//this limits the browser to having 9 tabs opened at once for their current view
+{tab 7} {@tab 8} {tab 9}	//this limits browser to having 9 tabs opened at once in view
 Optionally, allow users to open more than 9 tabs which will remove the ability to hop from one
 edge to another. Instead, users would potentially have unlimited tabs to use. Whenever a tab is
 closed, then it needs to close the open space by shifting another tab into the position that the
@@ -43,18 +43,20 @@ on a similar topic such as tabs for sports, social media, video games, youtube v
 of stuff that people find interesting. They would be able to swap between these collections of tabs freely
 through the backpack feature.
 
-*Develop user states "Navigation" and "Control". The Control state allows users to function the browser like
-any typical standard browser such as Chrome or Firefox being able to type in information using any of the keys
-and focusing on parts of the webpage using 'tab'. The Navigation state is what handles traversal between each
-of the tabs and collections through using WASD or the 'i' key. If users click somewhere on a webpage then it
-will shift to the Control state automatically and users can interact with the webpage as normal. To go back to
-the Navigation state a bindable key for switching states is used; the 'alt' key would probably work well for
-this since it conveniently located for ease of use - not sure what to do for alternatives because this binding
-has to persist in both the Control and Nav states (maybe make it right shift only?) - another option could be
-to use one of the 'F#' keys such as F12.
+*Develop user states "Navigation" and "Control". The Control state allows users to function the browser
+like any typical standard browser such as Chrome or Firefox being able to type in information using any
+of the keys and focusing on parts of the webpage using 'tab'. The Navigation state is what handles
+traversal between each of the tabs and collections through using WASD or the 'i' key. If users click
+somewhere on a webpage then it will shift to the Control state automatically and users can interact
+with the webpage as normal. To go back to the Navigation state a bindable key for switching states is
+used; the 'alt' key would probably work well for this since it conveniently located for ease of
+use - not sure what to do for alternatives because this binding has to persist in both the Control
+and Nav states (maybe make it right shift only?) - another option could be to use one of the 'F#' keys
+such as F12.
 
 [Notes]
-Keep in mind to make every action within the Navigation state bindable to any key - no duplicate bindings allowed.
+Keep in mind to make every action within the Navigation state bindable to any key - each binding must
+use a unique key (no duplicate bindings allowed).
 
 
 
